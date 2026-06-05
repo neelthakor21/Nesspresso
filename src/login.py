@@ -85,7 +85,7 @@ try:
             messagebox.showinfo("Access Granted", "Correct password. Application starting...")
             password_window.destroy()
             root.destroy()  # Close the password window
-            import frontend
+            import src.frontend as frontend
             frontend.main()  # Call the function to start the main application
         else:
             attempt_counter += 1
