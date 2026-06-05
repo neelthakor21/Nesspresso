@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
 from PIL import Image, ImageTk
-import backend
+import src.backend as backend
 import sys
 import os
 import threading
@@ -214,11 +214,5 @@ def main():
 
 
 ############################################################################################################################################################
-#pyinstaller --onefile --windowed --name "Nesspresso" --icon=ico1.ico --add-data "ico1.ico;." --add-data "bgi1.jpg;." --add-data "backend.py;." frontend.py#
-############################################################################################################################################################
-
-# pyinstaller --onefile --name "Nesspresso" --icon=ies_ico1.ico --add-data "ies_ico1.ico;." --add-data "bgi1.jpg;." --add-data "backend.py;." --add-data "frontend.py;." --add-data "Banner.jpg;." login.py
-
-# pyinstaller --onefile --name "Nesspresso" --icon=logo.ico --add-data "logo.ico;." --add-data "bgi1.jpg;." --add-data "backend.py;." --add-data "frontend.py;." --add-data "logo.png;." login.py
-
 # python -m PyInstaller --clean --windowed --onefile --name "Nesspresso" --icon=logo.ico --add-data "logo.ico;." --add-data "logo.png;." --add-data "bgi1.jpg;." login.py
+############################################################################################################################################################
