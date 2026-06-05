@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+dist/
+build/
+*.spec
+.idea/
+.vscode/
+nesspresso/
+*.xlsx
+*.csv
