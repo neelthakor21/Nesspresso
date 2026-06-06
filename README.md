@@ -73,6 +73,7 @@ Excel Deliverable
 
 ## Project Structure
 
+```text
 Nesspresso/
 ├── src/
 │   ├── __init__.py
@@ -98,6 +99,7 @@ Nesspresso/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
 
 ---
 
