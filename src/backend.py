@@ -153,7 +153,8 @@ def coverPage(path):
     cell.font = Font(size=54, color="002060", bold=True)
     cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
 
-    temp_img = resource_path("app_logo.png")
+    # temp_img = resource_path("app_logo.png")
+    temp_img = resource_path(os.path.join("docs", "logo", "app_logo.png"))
     img = Image(temp_img)
     img.width = 350
     img.height = 130

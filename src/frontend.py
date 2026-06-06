@@ -118,9 +118,9 @@ def main():
     center_window(root, width=1300, height=700)
 
     # Set custom favicon
-    root.iconbitmap(resource_path('logo.ico'))  # Replace with your favicon path
+    root.iconbitmap(resource_path(os.path.join("docs", "logo", "logo.ico")))  # Replace with your favicon path
     # Load the background image using Pillow
-    background_image_path = resource_path('bgi1.jpg')
+    background_image_path = resource_path(os.path.join("docs", "logo", "bgi1.jpg"))
     background_image = Image.open(background_image_path)  # Replace with your image path
 
     # Convert the image to a PhotoImage object
@@ -130,15 +130,7 @@ def main():
     background_label = tk.Label(root, image=background_photo)
     background_label.place(relwidth=1, relheight=1)
 
-    # logo1 = resource_path('app_logo.png')
-    # logo = Image.open(logo1)  # Replace with the path to your logo
-    # logo = logo.resize((100, 100), Image.Resampling.LANCZOS)  # Optional: Resize the logo
-    # logo_image = ImageTk.PhotoImage(logo)
-
-    # logo_label = tk.Label(root, image=logo_image)
-    # logo_label.place(x=15, y=15, anchor='nw')
-
-    logo1 = resource_path('app_logo.png')
+    logo1 = resource_path(os.path.join("docs", "logo", "app_logo.png"))
 
     logo = Image.open(logo1).convert("RGBA")
     logo = logo.crop(logo.getbbox())

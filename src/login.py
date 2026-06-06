@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+import src.frontend as frontend
 import sys, os
 import base64
 import uuid
@@ -85,7 +86,6 @@ try:
             messagebox.showinfo("Access Granted", "Correct password. Application starting...")
             password_window.destroy()
             root.destroy()  # Close the password window
-            import src.frontend as frontend
             frontend.main()  # Call the function to start the main application
         else:
             attempt_counter += 1
@@ -101,7 +101,7 @@ try:
     # Main Application Entry
     root = tk.Tk()
     root.withdraw()  # Hide the root window
-    root.iconbitmap(resource_path('logo.ico'))
+    root.iconbitmap(resource_path(os.path.join("docs", "logo", "logo.ico")))
 
     # Show the "Checking authorization" window
     auth_check_window = show_checking_authorization()
@@ -122,7 +122,7 @@ try:
         height = 150
         center_window(password_window, width, height)
 
-        password_window.iconbitmap(resource_path('logo.ico'))
+        password_window.iconbitmap(resource_path(os.path.join("docs", "logo", "logo.ico")))
 
         password_label = tk.Label(password_window, text="Enter Password:", font=("Helvetica", 12))
         password_label.pack(pady=10)
