@@ -1,6 +1,12 @@
-![Nesspresso Banner](docs/logo/logo.ico)
+<p align="center">
+  <img src="docs/logo/logo.ico" alt="Nesspresso Logo">
+</p>
 
-# Nesspresso
+<h1 align="center">Nesspresso</h1>
+
+<p align="center">
+  Data Processing & Reporting Automation for Nessus Reports
+</p>
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
@@ -22,6 +28,7 @@ Nesspresso is a Python-based data processing and reporting automation tool speci
 * Automated cover page creation and report formatting
 * Significant reduction in report size and analysis effort
 * Improved readability and prioritization of findings
+* Features a two-tier authentication mechanism requiring both a pre-registered device MAC address and user password verification for secure application access.
 
 ---
 
@@ -66,22 +73,31 @@ Excel Deliverable
 
 ## Project Structure
 
-```text
 Nesspresso/
 ├── src/
+│   ├── __init__.py
 │   ├── backend.py
 │   ├── frontend.py
 │   └── login.py
 │
 ├── docs/
-│   ├── screenshots/
-│   ├── demo.gif
-│   └── sample_reports/
+│   ├── logo/
+│   │   ├── app_logo.png
+│   │   ├── bgi1.jpg
+│   │   └── logo.ico
+│   │
+│   ├── reports/
+│   │   ├── Nesspresso_Report.xlsx
+│   │   └── Nessus_Report.csv
+│   │
+│   └── screenshots/
+│       ├── homePage.png
+│       └── output.png
 │
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 └── .gitignore
-```
 
 ---
 
@@ -95,15 +111,11 @@ Traditional Nessus exports can become difficult to analyze due to the large numb
 
 ### Application Interface
 
-![Application Interface](docs/screenshots/gui.png)
+![Application Interface](docs/screenshots/homePage.png)
 
-### Generated Report
+### Output
 
-![Generated Report](docs/screenshots/report.png)
-
-### Before vs After Processing
-
-![Before vs After](docs/screenshots/before_after.png)
+![Output](docs/screenshots/output.png)
 
 ---
 
@@ -120,5 +132,3 @@ Traditional Nessus exports can become difficult to analyze due to the large numb
 ## Author
 
 **Neel Thakor**
-
-Computer Engineer | Cybersecurity & Data Processing Enthusiast

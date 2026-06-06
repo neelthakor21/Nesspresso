@@ -11,3 +11,7 @@ nesspresso/
 *.csv
 app_logo_v1.png
 login_backup_old.py
+
+# Exceptions
+!docs/sample_reports/Nesspresso_Report.xlsx
+!docs/sample_reports/Nessus_Report.csv
