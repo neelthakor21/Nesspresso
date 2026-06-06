@@ -1,4 +1,4 @@
-![Nesspresso Banner](docs/logo/app_logo.png)
+![Nesspresso Banner](docs/logo/logo.ico)
 
 # Nesspresso
 ---
